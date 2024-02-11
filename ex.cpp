@@ -30,7 +30,7 @@ rb_tree_tag,
 tree_order_statistics_node_update>
 ordered_set;
 
-void solve(){
+void promod(){
     
 }
 
@@ -50,7 +50,7 @@ int main()
     for (int tc = 1 ; tc <= test_cases ; tc++){
 
         //cout << "Case " << tc << ": ";
-        solve();
+        promod();
         //printf("Case %d: %.10lf\n",tc,ans);
 
     }
