@@ -44,3 +44,9 @@ vector<H> getHashes(string& str, int length) {
 }
  
 H hashString(string& s){H h{}; for(char c:s) h=h*C+c;return h;}
+
+void solve(){
+    string s;
+    HashInterval h(s);
+    H val = h.hashInterval(i, i+len); // query
+}
