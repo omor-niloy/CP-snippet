@@ -27,13 +27,13 @@ int power(int a, int b) {
 }
 
 int modInverse(int n) {
-    return power(n, mod);
+    return power(n, mod - 2);
 }
  
-int ncr(ll n,ll r){
+int ncr(int n, int r){
     if (n < r) return 0;
     if (r == 0) return 1;
-    return (f[n] * modInverse(f[r], mod) % mod
+    return (f[n] * modInverse(f[r]) % mod
             * modInverse(f[n - r]) % mod)
            % mod;
 }
